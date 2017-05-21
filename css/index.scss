@@ -1,0 +1,70 @@
+@import "partials/variables";
+@import "normalize";
+
+body {
+  font-family: 'Raleway', sans-serif;
+  color: $onyx;
+
+  a {
+    color: $onyx;
+  }
+
+  h1 {
+    margin: 0;
+  }
+
+}
+
+h1 {
+  font-family: 'Lobster', cursive;
+  color: $turquoise;
+}
+
+header {
+  background-color: $off-white;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  ul {
+    margin: 0;
+
+    li {
+      display: inline-block;
+      margin: 1.5rem 4rem;
+
+      a {
+        text-transform: uppercase;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+#splash {
+  background-color: $sky;
+  height: 80vh;
+  padding: 1%;
+
+  .splash-container {
+    padding-left: 30%;
+    padding-top: 25vh;
+
+    h1 {
+      color: white;
+      font-size: 10rem;
+      margin: 0;
+    }
+
+    h2 {
+      color: white;
+      font-size: 1.5rem;
+    }
+  }
+}
+
+#portfolio {
+  color: $off-white;
+  background-color: $onyx;
+}
