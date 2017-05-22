@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Andy Ho</title>
   <!-- CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Raleway:200,400,800">
   <link rel="stylesheet" href="./css/index.css">
 </head>
@@ -34,10 +34,12 @@
 
   <!-- Portfolio Section -->
   <section id="portfolio">
-    <div class="portfolio-container">
-      <h1>Portfolio</h1>
-      <!-- placeholder for icon -->
-      <h2>Projects I've worked on</h2>
+    <div class="container">
+      <div class="title">
+        <h1>Portfolio</h1>
+         <i class="fa fa-newspaper-o fa-5x" aria-hidden="true"></i>
+        <h2>Projects I've worked on</h2>
+      </div>
       <!-- Projects to fade in as user scrolls down -->
       <article>MusicBox</article>
       <article>PokeGym</article>
@@ -49,25 +51,43 @@
 
   <!-- About Me Section -->
   <section id="about">
-    <div class="about-container">
-      <h1>About</h1>
-      <figure>
-        <img src="images/me.jpg">
-        <h2>Me, me, me</h2>
-      </figure>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum voluptates necessitatibus minus tempore. Earum vel nam cum fugit fuga, similique velit assumenda! Odio, ipsa repudiandae quis id optio deserunt nihil. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore debitis consectetur laborum quae quod voluptatem minus a illum adipisci numquam tenetur modi officia, et, iusto neque dolore hic sequi nulla.</p>
+    <div class="container">
+      <div class="title">
+        <h1>About</h1>
+        <figure>
+          <img class="profile-pic" src="images/me.jpg">
+          <h2>Yep, thats me</h2>
+        </figure>
+      </div>
+      <p>I was born in Hong Kong and moved to Vancouver, Canada at the ripe old age of 4 years old. Graduating with a degree in Finance, I moved back to Hong Kong shortly after to start a career as an auditor. While being exposed to many different industries during my auditing career, I felt that the technology industry was the most dynamic and where all the innovations was taking place. Technologies including Instagram, virtual reality and the internet of things were beginning to consume and take hold of our lives while I did not understand a thing about the inner workings, which frustrated me as I'm a naturally curious person. Finally, when I was nearing completion of my Certified Public Accountant certification, I decided to take the plunge into programming and havn't looked back since!</p>
       <h2>Skills</h2>
       <!-- skill icons: HTML5, CSS3, Javascript, React, Node, Firebase, MongoDB, PostgreSQL -->
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, eligendi voluptatum esse id possimus delectus, qui quae nesciunt eaque ipsa earum nam iusto modi, nihil animi consectetur accusamus. Vitae, laborum!</p>
     </div>
   </section>
   <!-- End About Me Section -->
 
   <!-- Contact Section -->
   <section id="contact">
-    <div class="contact-container">
-      <h1>Contact</h1>
-      <!-- Placeholder for icon -->
-      <h2>Say Hi!</h2>
+    <div class="container">
+      <div class="title">
+        <h1>Contact</h1>
+         <i class="fa fa-paper-plane fa-5x" aria-hidden="true"></i>
+        <h2>Say Hi!</h2>
+      </div>
+      <!-- Email Form -->
+      <form id="contact-form" action="#" method="post">
+        <fieldset>
+          <label for="contact-name">Name</label>
+          <input id="contact-name" name="contact-name" placeholder="Name" required>
+          <label for="contact-email">Email</label>
+          <input id="contact-email" name="contact-email" placeholder="Email Address" required>
+          <label for="contact-message">Message</label>
+          <textarea id="contact-message" name="contact-message" rows="10" placeholder="Type your thoughts here..." required></textarea>
+          <button type="submit">Send</button>
+        </fieldset>
+      </form>
+      <!-- End Email Form -->
     </div>
   </section>
   <!-- End Contact Section -->

@@ -10,15 +10,60 @@ body {
   }
 
   h1 {
-    margin: 0;
+    margin: 0 0 1.5rem 0;
+    font-size: 4rem;
+    font-family: 'Lobster', cursive;
+    color: $turquoise;
   }
 
+  h2 {
+    font-weight: 400;
+    font-size: 1.2rem;
+  }
 }
 
-h1 {
-  font-family: 'Lobster', cursive;
-  color: $turquoise;
+section {
+  padding: 4rem 0rem;
 }
+
+.title {
+  text-align: center;
+}
+
+.container {
+  padding: 0 3rem;
+}
+
+form {
+
+  fieldset {
+  border: none;
+  text-align: center;
+
+    label {
+      display: none;
+    }
+
+    input, textarea {
+      border: none;
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 1rem;
+      padding: 1rem 1.5rem;
+      border-radius: 0.5rem;
+      width: 50%;
+    }
+
+    button {
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+      padding: 1rem 1.5rem;
+      border-radius: 0.5rem;
+      width: 50%;
+    }
+  }
+}
+
 
 header {
   background-color: $off-white;
@@ -26,17 +71,28 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
+  font-size: 1.2rem;
 
   ul {
     margin: 0;
 
     li {
       display: inline-block;
-      margin: 1.5rem 4rem;
 
       a {
+        display: block;
+        margin: 0rem 2rem;
+        padding: 1.5rem 2rem;
         text-transform: uppercase;
         text-decoration: none;
+        transition: all 0.2s ease-in;
+
+        &:hover {
+          color: $sky;
+          background-color: rgba(59, 165, 226, 0.05); //to replace with opacity-adjusted $sky
+          border-bottom: 5px solid $sky;
+        }
+
       }
     }
   }
@@ -44,7 +100,7 @@ header {
 
 #splash {
   background-color: $sky;
-  height: 80vh;
+  height: 90vh;
   padding: 1%;
 
   .splash-container {
@@ -67,4 +123,29 @@ header {
 #portfolio {
   color: $off-white;
   background-color: $onyx;
+}
+
+#about {
+  background-color: $off-white;
+
+    .profile-pic {
+      border-radius: 50%;
+    }
+
+}
+
+#contact {
+  color: $off-white;
+  background-color: $onyx;
+
+}
+
+footer {
+  background-color: $slate;
+  text-align: center;
+  color: $off-white;
+  padding: 2rem 0rem;
+    li {
+      display: inline;
+    }
 }
