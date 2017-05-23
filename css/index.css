@@ -467,8 +467,8 @@ section {
   text-align: center;
 }
 
-.container {
-  padding: 0 10%;
+.container-fluid {
+  max-width: 800px;
 }
 
 form fieldset {
@@ -581,6 +581,21 @@ header ul li a:hover {
   background-color: #313544;
 }
 
+#work .project-pic {
+  padding: 0;
+}
+
+#work figure {
+  position: relative;
+  margin: 1rem;
+  text-align: center;
+}
+
+#work figure img {
+  width: 100%;
+  max-width: 350px;
+}
+
 #about {
   background-color: rgba(250, 250, 250, 0.95);
 }
@@ -589,6 +604,10 @@ header ul li a:hover {
   border-radius: 50%;
   width: 100%;
   max-width: 350px;
+}
+
+#about ul {
+  padding: 0;
 }
 
 #contact {

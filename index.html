@@ -8,13 +8,14 @@
   <!-- CSS -->
   <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Raleway:200,400,800">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
 
   <!-- Navbar -->
-  <header>
-    <nav>
+  <header class="navbar navbar-default navbar-fixed-top">
+    <nav class="container-fluid">
       <ul>
         <li><a href="#work">Work</a></li>
         <li><a href="#about">About</a></li>
@@ -22,6 +23,7 @@
       </ul>
     </nav>
   </header>
+  <!-- End Navbar -->
 
   <!-- Splash -->
   <section id="splash">
@@ -36,24 +38,42 @@
 
   <!-- Portfolio Section -->
   <section id="work">
-    <div class="container">
-      <div class="title">
+    <div class="container-fluid">
+      <div class="title row">
         <h1>Work</h1>
          <i class="fa fa-newspaper-o fa-5x" aria-hidden="true"></i>
         <h2>Projects I've worked on</h2>
       </div>
       <!-- Projects to fade in as user scrolls down -->
-      <article>MusicBox</article>
-      <article>PokeGym</article>
-      <article>TweetCount</article>
-      <article>Space Invaders</article>
+      <div class="row">
+        <div class="col-xs-12 col-sm-5 col-sm-offset-1 project-pic">
+          <figure class="project-1">
+            <img src="./images/musicbox.jpg" alt="MusicBox">
+          </figure>
+        </div>
+        <div class="col-xs-12 col-sm-5 project-pic">
+          <figure class="project-2">
+            <img src="./images/pokegym.jpg" alt="Pokegym">
+          </figure>
+        </div>
+        <div class="col-xs-12 col-sm-5 col-sm-offset-1 project-pic">
+          <figure class="project-3">
+            <img src="./images/tweetcount.jpg" alt="TweetCount">
+          </figure>
+        </div>
+        <div class="col-xs-12 col-sm-5 project-pic">
+          <figure class="project-4">
+            <img src="./images/space-invaders.jpg" alt="Space Invaders">
+          </figure>
+        </div>
+      </div>
     </div>
   </section>
   <!-- End Portfolio Section -->
 
   <!-- About Me Section -->
   <section id="about">
-    <div class="container">
+    <div class="container-fluid">
       <div class="title">
         <h1>About</h1>
         <figure>
@@ -62,16 +82,26 @@
         <h2>Yep, thats me</h2>
       </div>
       <p>I was born in Hong Kong and moved to Canada at the ripe old age of 4 years old. Graduating with a degree in Finance, I moved back to Hong Kong shortly after to start a career as an auditor. While being exposed to many different industries during my auditing career, I felt that the technology industry was the most dynamic and where all the innovations was taking place. Technologies including Instagram, virtual reality and the internet of things were beginning to consume and take hold of our lives while I did not understand a thing about the inner workings, which frustrated me as I'm a naturally curious person. Finally, when I was nearing completion of my Certified Public Accountant certification, I decided to take the plunge into programming and havn't looked back since!</p>
-      <h2>Technologies</h2>
+      <h2>Technologies I use</h2>
+      <ul>
+        <li>HTML5/CSS3</li>
+        <li>Javascript</li>
+        <li>jQuery</li>
+        <li>React</li>
+        <li>Node</li>
+        <li>Express</li>
+        <li>Firebase</li>
+        <li>MongoDB</li>
+        <li>PostgreSQL</li>
+      </ul>
       <!-- skill icons: HTML5, CSS3, Javascript, React, Node, Firebase, MongoDB, PostgreSQL -->
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, eligendi voluptatum esse id possimus delectus, qui quae nesciunt eaque ipsa earum nam iusto modi, nihil animi consectetur accusamus. Vitae, laborum!</p>
     </div>
   </section>
   <!-- End About Me Section -->
 
   <!-- Contact Section -->
   <section id="contact">
-    <div class="container">
+    <div class="container-fluid">
       <div class="title">
         <h1>Contact</h1>
          <i class="fa fa-paper-plane fa-5x" aria-hidden="true"></i>
