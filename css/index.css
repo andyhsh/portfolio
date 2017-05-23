@@ -447,7 +447,7 @@ body h1 {
   margin: 0 0 1.5rem 0;
   font-size: 4rem;
   font-family: 'Lobster', cursive;
-  color: #c3dfe0;
+  color: #3ba5e2;
 }
 
 body h2 {
@@ -456,7 +456,7 @@ body h2 {
 }
 
 section {
-  padding: 4rem 0rem;
+  padding: 5rem 0;
 }
 
 .title {
@@ -469,7 +469,8 @@ section {
 
 form fieldset {
   border: none;
-  text-align: center;
+  max-width: 400px;
+  margin: 0 auto;
 }
 
 form fieldset label {
@@ -480,18 +481,27 @@ form fieldset input, form fieldset textarea {
   border: none;
   display: block;
   margin: 0 auto;
+  font-family: Raleway;
   margin-bottom: 1rem;
   padding: 1rem 1.5rem;
   border-radius: 0.5rem;
-  width: 50%;
+  width: 100%;
+  box-sizing: border-box;
+  resize: none;
 }
 
 form fieldset button {
+  border: 0px;
+  background: #3ba5e2;
+  font-family: Raleway;
+  font-size: 1.3rem;
+  font-weight: 600;
   text-transform: uppercase;
   margin-bottom: 1rem;
   padding: 1rem 1.5rem;
   border-radius: 0.5rem;
-  width: 50%;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 header {
@@ -505,6 +515,7 @@ header {
 
 header ul {
   margin: 0;
+  padding: 0;
 }
 
 header ul li {
@@ -518,6 +529,7 @@ header ul li a {
   text-transform: uppercase;
   text-decoration: none;
   transition: all 0.2s ease-in;
+  border-bottom: 5px solid transparent;
 }
 
 header ul li a:hover {
@@ -529,12 +541,16 @@ header ul li a:hover {
 #splash {
   background-color: #3ba5e2;
   height: 90vh;
-  padding: 1%;
+  padding: 0;
 }
 
 #splash .splash-container {
-  padding-left: 30%;
-  padding-top: 25vh;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #splash .splash-container h1 {
@@ -548,7 +564,7 @@ header ul li a:hover {
   font-size: 1.5rem;
 }
 
-#portfolio {
+#work {
   color: rgba(250, 250, 250, 0.95);
   background-color: #313544;
 }
@@ -559,6 +575,8 @@ header ul li a:hover {
 
 #about .profile-pic {
   border-radius: 50%;
+  width: 60%;
+  max-width: 350px;
 }
 
 #contact {
@@ -567,12 +585,20 @@ header ul li a:hover {
 }
 
 footer {
-  background-color: #5d737e;
+  background-color: rgba(49, 53, 68, 0.8);
   text-align: center;
   color: rgba(250, 250, 250, 0.95);
   padding: 2rem 0rem;
 }
 
+footer ul {
+  padding: 0;
+}
+
 footer li {
   display: inline;
+}
+
+footer .icons {
+  margin: 0 0.5rem;
 }

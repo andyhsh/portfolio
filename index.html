@@ -16,7 +16,7 @@
   <header>
     <nav>
       <ul>
-        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#work">Work</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -26,17 +26,19 @@
   <!-- Splash -->
   <section id="splash">
     <div class="splash-container">
-      <h1>Hello,</h1>
-      <h2>I'm Andy Ho, a fullstack web developer</h2>
+      <div>
+        <h1>Hello,</h1>
+        <h2>I'm Andy Ho, a fullstack web developer</h2>
+      </div>
     </div>
   </section>
   <!-- End Splash -->
 
   <!-- Portfolio Section -->
-  <section id="portfolio">
+  <section id="work">
     <div class="container">
       <div class="title">
-        <h1>Portfolio</h1>
+        <h1>Work</h1>
          <i class="fa fa-newspaper-o fa-5x" aria-hidden="true"></i>
         <h2>Projects I've worked on</h2>
       </div>
@@ -76,14 +78,14 @@
         <h2>Say Hi!</h2>
       </div>
       <!-- Email Form -->
-      <form id="contact-form" action="#" method="post">
+      <form id="contact-form" action="https://formspree.io/89andy@gmail.com" method="post">
         <fieldset>
           <label for="contact-name">Name</label>
-          <input id="contact-name" name="contact-name" placeholder="Name" required>
+          <input type="text" id="contact-name" name="contact-name" placeholder="Name" required>
           <label for="contact-email">Email</label>
-          <input id="contact-email" name="contact-email" placeholder="Email Address" required>
+          <input type="email" id="contact-email" name="contact-email" placeholder="Email Address" required>
           <label for="contact-message">Message</label>
-          <textarea id="contact-message" name="contact-message" rows="10" placeholder="Type your thoughts here..." required></textarea>
+          <textarea type="text" id="contact-message" name="contact-message" rows="10" placeholder="Type your thoughts here..." required></textarea>
           <button type="submit">Send</button>
         </fieldset>
       </form>
@@ -96,9 +98,9 @@
   <footer>
     <div class="footer-container">
       <ul>
-        <li>email</li>
-        <li>linkedin</li>
-        <li>github</li>
+        <li><a href="mailto:89andy@gmail.com"><i class="icons fa fa-envelope fa-2x"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/andy-ho-a373a585/"><i class="icons fa fa-linkedin fa-2x"></i></a></li>
+        <li><a href="https://github.com/andyhsh"><i class="icons fa fa-github fa-2x"></i></a></li>
       </ul>
       <p>Copyright © 2017 All rights reserved.</p>
     </div>

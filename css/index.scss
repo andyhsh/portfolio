@@ -13,7 +13,7 @@ body {
     margin: 0 0 1.5rem 0;
     font-size: 4rem;
     font-family: 'Lobster', cursive;
-    color: $turquoise;
+    color: $sky;
   }
 
   h2 {
@@ -23,7 +23,7 @@ body {
 }
 
 section {
-  padding: 4rem 0rem;
+  padding: 5rem 0;
 }
 
 .title {
@@ -38,7 +38,8 @@ form {
 
   fieldset {
   border: none;
-  text-align: center;
+  max-width: 400px;
+  margin: 0 auto;
 
     label {
       display: none;
@@ -48,18 +49,27 @@ form {
       border: none;
       display: block;
       margin: 0 auto;
+      font-family: $content-font;
       margin-bottom: 1rem;
       padding: 1rem 1.5rem;
       border-radius: 0.5rem;
-      width: 50%;
+      width: 100%;
+      box-sizing: border-box;
+      resize: none;
     }
 
     button {
+      border: 0px;
+      background: $sky;
+      font-family: $content-font;
+      font-size: 1.3rem;
+      font-weight: 600;
       text-transform: uppercase;
       margin-bottom: 1rem;
       padding: 1rem 1.5rem;
       border-radius: 0.5rem;
-      width: 50%;
+      width: 100%;
+      box-sizing: border-box;
     }
   }
 }
@@ -75,6 +85,7 @@ header {
 
   ul {
     margin: 0;
+    padding: 0;
 
     li {
       display: inline-block;
@@ -86,6 +97,7 @@ header {
         text-transform: uppercase;
         text-decoration: none;
         transition: all 0.2s ease-in;
+        border-bottom: 5px solid transparent;
 
         &:hover {
           color: $sky;
@@ -101,11 +113,16 @@ header {
 #splash {
   background-color: $sky;
   height: 90vh;
-  padding: 1%;
+  padding: 0;
+  //padding: 1%;
 
   .splash-container {
-    padding-left: 30%;
-    padding-top: 25vh;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     h1 {
       color: white;
@@ -120,7 +137,7 @@ header {
   }
 }
 
-#portfolio {
+#work {
   color: $off-white;
   background-color: $onyx;
 }
@@ -130,6 +147,8 @@ header {
 
     .profile-pic {
       border-radius: 50%;
+      width: 60%;
+      max-width: 350px;
     }
 
 }
@@ -141,11 +160,17 @@ header {
 }
 
 footer {
-  background-color: $slate;
+  background-color: rgba(49, 53, 68, 0.8);
   text-align: center;
   color: $off-white;
   padding: 2rem 0rem;
+    ul {
+      padding: 0;
+    }
     li {
       display: inline;
+    }
+    .icons {
+      margin: 0 0.5rem;
     }
 }
