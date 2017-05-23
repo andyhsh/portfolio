@@ -467,7 +467,9 @@ section {
   text-align: center;
 }
 
-.container-fluid {
+.container {
+  padding: 0 1rem;
+  margin: 0 auto;
   max-width: 800px;
 }
 
@@ -520,6 +522,7 @@ header {
   background-color: rgba(250, 250, 250, 0.95);
   text-align: center;
   position: fixed;
+  z-index: 2;
   top: 0;
   width: 100%;
   font-size: 1.2rem;
@@ -536,8 +539,8 @@ header ul li {
 
 header ul li a {
   display: block;
-  margin: 0rem 2rem;
-  padding: 1.5rem 2rem;
+  margin: 0rem 2em;
+  padding: 1.5em 2em;
   text-transform: uppercase;
   text-decoration: none;
   transition: all 0.2s ease-in;
@@ -552,7 +555,7 @@ header ul li a:hover {
 
 #splash {
   background-color: #3ba5e2;
-  height: 90vh;
+  height: 100vh;
   padding: 0;
 }
 
@@ -576,9 +579,22 @@ header ul li a:hover {
   font-size: 1.5rem;
 }
 
+#splash .splash-container > div {
+  padding: 10%;
+}
+
 #work {
   color: rgba(250, 250, 250, 0.95);
   background-color: #313544;
+}
+
+#work .projects {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 #work .project-pic {
@@ -587,7 +603,7 @@ header ul li a:hover {
 
 #work figure {
   position: relative;
-  margin: 1rem;
+  margin: 15px;
   text-align: center;
 }
 
@@ -606,8 +622,24 @@ header ul li a:hover {
   max-width: 350px;
 }
 
-#about ul {
+#about h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#about .skills {
+  display: flex;
+  justify-content: center;
+}
+
+#about .skills ul {
   padding: 0;
+  list-style-type: circle;
+  margin: 0 10%;
+}
+
+#about .skills ul li {
+  margin-bottom: 0.5rem;
 }
 
 #contact {
@@ -637,4 +669,26 @@ footer .icons {
 
 footer .icons:hover {
   color: rgba(250, 250, 250, 0.95);
+}
+
+@media (max-width: 725px) {
+  header {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 540px) {
+  header ul li a {
+    margin: 0 0.3em;
+    padding: 1.2em 1.5em;
+  }
+}
+
+@media (max-width: 400px) {
+  #splash .splash-container h1 {
+    font-size: 7rem;
+  }
+  #splash .splash-container h2 {
+    font-size: 1.3rem;
+  }
 }

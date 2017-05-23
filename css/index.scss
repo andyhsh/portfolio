@@ -34,7 +34,9 @@ section {
   text-align: center;
 }
 
-.container-fluid {
+.container {
+  padding: 0 1rem;
+  margin: 0 auto;
   max-width: 800px;
   //padding: 0 10%;
 }
@@ -92,6 +94,7 @@ header {
   background-color: $off-white;
   text-align: center;
   position: fixed;
+  z-index: 2;
   top: 0;
   width: 100%;
   font-size: 1.2rem;
@@ -105,8 +108,8 @@ header {
 
       a {
         display: block;
-        margin: 0rem 2rem;
-        padding: 1.5rem 2rem;
+        margin: 0rem 2em;
+        padding: 1.5em 2em;
         text-transform: uppercase;
         text-decoration: none;
         transition: all 0.2s ease-in;
@@ -125,7 +128,7 @@ header {
 
 #splash {
   background-color: $sky;
-  height: 90vh;
+  height: 100vh;
   padding: 0;
   //padding: 1%;
 
@@ -148,23 +151,46 @@ header {
       font-size: 1.5rem;
     }
   }
+
+  .splash-container > div {
+    padding: 10%;
+  }
+
 }
 
 #work {
   color: $off-white;
   background-color: $onyx;
+
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
   .project-pic {
     padding: 0;
   }
+
+  .project-1, .project-3 {
+    //transform: translate(-100px, 20px);
+  }
+
+  .project-2, .project-4 {
+    //transform: translate(100px, 20px);
+  }
+
   figure {
     position: relative;
-    margin: 1rem;
+    margin: 15px;
     text-align: center;
 
     img {
       width: 100%;
       max-width: 350px;
-      //opacity: 0.5;
     }
   }
 }
@@ -178,11 +204,23 @@ header {
     max-width: 350px;
   }
 
-  ul {
-    padding: 0;
+  h2 {
+    text-align: center;
+    text-transform: uppercase;
+  }
 
-    li {
+  .skills {
+    display: flex;
+    justify-content: center;
 
+    ul {
+      padding: 0;
+      list-style-type: circle;
+      margin: 0 10%;
+      li {
+        margin-bottom: 0.5rem;
+
+      }
     }
   }
 }
@@ -213,6 +251,31 @@ footer {
     }
 }
 
-@media only screen and (max-width: 640px) {
+@media (max-width:725px) {
+  header {
+    font-size: 14px;
+  }
+}
 
+@media (max-width:540px) {
+  header {
+    ul li a {
+      margin: 0 0.3em;
+      padding: 1.2em 1.5em;
+    }
+  }
+}
+@media (max-width:400px) {
+  #splash {
+    .splash-container {
+      h1 {
+        font-size: 7rem;
+      }
+
+      h2 {
+        font-size: 1.3rem ;
+      }
+    }
+
+  }
 }
