@@ -1,6 +1,10 @@
 @import "partials/variables";
 @import "normalize";
 
+:root {
+  font-size: 16px;
+}
+
 body {
   font-family: 'Raleway', sans-serif;
   color: $onyx;
@@ -31,7 +35,7 @@ section {
 }
 
 .container {
-  padding: 0 3rem;
+  padding: 0 10%;
 }
 
 form {
@@ -60,7 +64,8 @@ form {
 
     button {
       border: 0px;
-      background: $sky;
+      background: $slate;
+      color: $onyx;
       font-family: $content-font;
       font-size: 1.3rem;
       font-weight: 600;
@@ -70,6 +75,13 @@ form {
       border-radius: 0.5rem;
       width: 100%;
       box-sizing: border-box;
+      cursor: pointer;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background: $sky;
+        color: $off-white;
+      }
     }
   }
 }
@@ -145,12 +157,11 @@ header {
 #about {
   background-color: $off-white;
 
-    .profile-pic {
-      border-radius: 50%;
-      width: 60%;
-      max-width: 350px;
-    }
-
+  .profile-pic {
+    border-radius: 50%;
+    width: 100%;
+    max-width: 350px;
+  }
 }
 
 #contact {
@@ -172,5 +183,9 @@ footer {
     }
     .icons {
       margin: 0 0.5rem;
+      transition: all 0.3s ease;
+      &:hover {
+        color: $off-white;
+      }
     }
 }
