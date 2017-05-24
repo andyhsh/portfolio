@@ -187,12 +187,58 @@ header {
     position: relative;
     margin: 15px;
     text-align: center;
+    overflow: hidden;
+
+    button {
+      font-family: $content-font;
+      cursor: pointer;
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      width: 150px;
+      margin-left: -75px;
+      background: $sky;
+      border: none;
+      padding: 20px 0;
+      border-radius: 10px;
+      color: $off-white;
+      opacity: 0;
+      transition: all 0.3s ease;
+    }
+
+    &:hover button {
+      top: 30%;
+      opacity: 1;
+    }
+
+    &:hover figcaption {
+      bottom: 0%;
+    }
+    &:hover img {
+      opacity: 0.2;
+      transform: scale(1.2);
+    }
 
     img {
       width: 100%;
       max-width: 350px;
+      transform: scale(1);
+      transition: all 0.3s ease;
     }
   }
+
+  figcaption {
+    position: absolute;
+    bottom: -50%;
+    background: $onyx;
+    width: 100%;
+    padding: 10%;
+    font-size: 1.3em;
+    box-sizing: border-box;
+    z-index: 2;
+    transition: all 0.3s ease;
+  }
+
 }
 
 #about {
@@ -207,6 +253,11 @@ header {
   h2 {
     text-align: center;
     text-transform: uppercase;
+  }
+
+  p {
+    line-height: 1.5rem;
+    margin: 2rem 0;
   }
 
   .skills {

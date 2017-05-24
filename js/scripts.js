@@ -16,3 +16,15 @@
 //
 //   }
 // });
+
+function addProjectEvents() {
+  var projects = $('.projects');
+
+  // projects.on('mouseenter', 'figure', function() {
+  //   console.log('click!', this);
+  //   $(this).append('<button>View Project</button>');
+  // })
+
+}
+
+addProjectEvents();
